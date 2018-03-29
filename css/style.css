@@ -209,7 +209,7 @@ ul.social-share li a {
 }
 
 ul.social-share li a:hover {
-  background: #E8CE0E;
+  background: #f19733;
   color: #fff;
 }
 
@@ -490,13 +490,11 @@ ul.social-share li a:hover {
 }
 
 #services {
-  background: #000 url(../images/services/bg_services.jpg);
-  background-size: cover;
   margin-top: 70px;
 }
 
 #services .lead, #services h2 {
-  color: #fff;
+  color: #262626;
 }
 
 .services-wrap {
@@ -1909,9 +1907,33 @@ ul.tag-cloud, ul.sidebar-gallery {
 }
 
 .searcher {
-  height: 80px;
-  /* background: red; */
+  height: auto;
   margin: 5px 15px;
+  padding-bottom: 20px;
+}
+
+.searcher input {
+  width: 210px;
+  height: 30px;
+  border: 0;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.searcher input:hover, .searcher input:focus {
+  outline: none;
+}
+
+.searcher button {
+  padding: 4px 25px;
+  border-radius: 12px;
+}
+
+.productos {
+  height: 155px;
+  background: #fff;
+  margin: 15px 0px;
 }
 
 @media (max-width:768px) {
@@ -1926,10 +1948,13 @@ ul.tag-cloud, ul.sidebar-gallery {
 }
 
 @media (min-width:500px) {
-  .item-product {
+  .item-product, .productos {
     width: 490px;
     height: 160px;
     margin: 15px auto;
+  }
+  .product-description {
+    font-size: 14px;
   }
 }
 
@@ -1939,18 +1964,50 @@ ul.tag-cloud, ul.sidebar-gallery {
     height: 150px;
     margin: 15px 15px;
   }
+  .productos {
+    width: auto;
+  }
+  .product-description {
+    font-size: 12.5px;
+  }
 }
 
 @media (min-width:992px) {
   .item-product {
     width: 46.8%;
-    height: 170px;
+    height: 175px;
+  }
+  .product-description {
+    font-size: 14px;
+  }
+  .product-price {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  .product-name {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 6px;
+  }
+  .productos {
+    height: 175px;
   }
 }
 
 @media (min-width:1200px) {
   .item-product {
     width: 47.4%;
+  }
+  .item-product-info {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .productos {
+    height: 180px;
+  }
+  .productos .item-product-info {
+    margin-left: 20px;
+    margin-top: 5px;
   }
 }
 
