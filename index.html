@@ -105,7 +105,7 @@
         <input type="text" name="" value="" placeholder="Categoria">
         <button class="btn-primary" type="button" name="btn-searcher">Buscar</button>
       </div>
-      <div class="col-sm-6 item-product">
+      <div class="col-sm-6 item-product" data-toggle="modal" data-target="#product-information">
         <div class="item-product-picture" style="background-image:url('images/Vino.jpg');"></div>
         <div class="item-product-info">
           <span class="product-name">Vinos de Altura</span>
@@ -190,14 +190,44 @@
   </div>
   <!--/.top-bar-->
 
+  <!-- Modals -->
+  <div class="modal fade" id="product-information" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="border-bottom:0;">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+          <h4 class="modal-title" id="myModalLabel">Vinos de Altura</h4>
+        </div>
+        <div class="modal-body">
+          <div class="product-about">
+            <div class="product-picture" style="background-image:url('images/Vino.jpg');"></div>
+            <div class="product-info">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos error mollitia omnis placeat necessitatibus deserunt provident, molestiae quaerat id, doloremque nesciunt deleniti voluptas, sapiente porro magni, eum dicta explicabo in.
+              <br>
+              <span class="name-orange">Cantidad :</span>
+              <input type="number" name="" value="1">
+              <br>
+              <span class="name-orange">Total :</span>
+              <span>234Bs</span>
+            </div>
+
+          </div>
+          <div>
+            <a href="#" class=" btn-add-card">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.Modals -->
+
   <footer id="footer" class="midnight-blue">
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          &copy; Gp Theme. All Rights Reserved.
-          <div class="credits">
-            <a href="https://bootstrapmade.com/">Bootstrap Templates</a> by <a href="https://bootstrapmade.com/">BootstrapMade.com</a>
-          </div>
+          Copyright © 2017 <span class="name-orange">GooMovil</span>. Todos los derechos reservados S.A.
         </div>
       </div>
     </div>

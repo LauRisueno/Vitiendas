@@ -44,7 +44,7 @@ h4 {
 }
 
 a {
-  color: #E8CE0E;
+  color: #333333;
   -webkit-transition: color 300ms, background-color 300ms;
   -moz-transition: color 300ms, background-color 300ms;
   -o-transition: color 300ms, background-color 300ms;
@@ -125,9 +125,11 @@ body>section {
 }
 
 .lead {
+  text-align: justify !important;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  margin-bottom: 0;
 }
 
 .transparent-bg {
@@ -1716,8 +1718,8 @@ ul.pagination>li>a i {
 }
 
 ul.pagination>li.active>a, ul.pagination>li:hover>a {
-  background-color: #E8CE0E !important;
-  border-color: #E8CE0E !important;
+  background-color: #f19733 !important;
+  border-color: #f19633 !important;
   color: #fff;
 }
 
@@ -1839,6 +1841,85 @@ ul.tag-cloud, ul.sidebar-gallery {
 
 /*Styles Vitiendas */
 
+.modal-body {
+  padding: 0px 15px !important;
+}
+
+.product-about {
+  height: auto;
+}
+
+.product-picture {
+  width: 100%;
+  height: 250px;
+  background-position: center;
+  background: #ccc;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.product-info {
+  padding: 15px 4px 0px 4px;
+}
+
+.btn-add-card {
+  display: block;
+  padding: 10px;
+  margin: 20px auto;
+  width: 180px;
+  text-align: center;
+  background: #f19633;
+  color: #fff !important;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.product-info .product-price {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.product-purchase {
+  font-size: 18px;
+}
+
+.product-info input {
+  width: 60px;
+  margin: 10px;
+  border: 0;
+  padding: 3px;
+  text-align: center;
+}
+
+.product-info input:focus {
+  outline: 0;
+}
+
+.name-orange {
+  color: #f19633;
+}
+
+.service-item .lead {
+  text-align: center !important;
+}
+
+.info {
+  padding: 10px;
+}
+
+.about-picture {
+  background: #ccc;
+  height: 250px;
+  width: 100%;
+}
+
+.about-information {
+  width: 100%;
+  text-align: justify;
+  font-size: 16px;
+  padding: 15px 0px;
+}
+
 .item-product-picture {
   width: 40%;
   height: 100%;
@@ -1934,6 +2015,55 @@ ul.tag-cloud, ul.sidebar-gallery {
   height: 155px;
   background: #fff;
   margin: 15px 0px;
+  cursor: pointer;
+}
+
+.pagination li a {
+  color: #484848;
+}
+
+.singIn {
+  height: 230px;
+  background: #fff;
+  margin-top: 30px;
+  padding: 3px;
+  padding-bottom: 20px;
+}
+
+.singIn input, .singUp input {
+  width: 90%;
+  padding: 5px 10px;
+  border: solid 1px #ccc;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.singIn input:focus, .singUp input:focus {
+  outline: 0;
+}
+
+.singUp input {
+  margin-bottom: 10px;
+}
+
+.singUp {
+  background: #fff;
+  border-top: 1px solid #ccc;
+  padding: 20px;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.btn-ingreso {
+  display: block;
+  padding: 7px;
+  background: #f19733;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 7px;
+  color: #fff !important;
+  font-size: 17px;
 }
 
 @media (max-width:768px) {
@@ -1948,6 +2078,11 @@ ul.tag-cloud, ul.sidebar-gallery {
 }
 
 @media (min-width:500px) {
+  .info img {
+    width: 450px;
+    height: auto;
+    margin: 10px 15px 10px 0px;
+  }
   .item-product, .productos {
     width: 490px;
     height: 160px;
@@ -1955,6 +2090,46 @@ ul.tag-cloud, ul.sidebar-gallery {
   }
   .product-description {
     font-size: 14px;
+  }
+  .about-picture {
+    width: 45%;
+    height: 200px;
+  }
+  .about-information {
+    float: left;
+    width: 60%;
+    text-align: justify;
+    padding: 0px 20px;
+    font-size: 16px;
+  }
+  .product-about {
+    height: 280px;
+  }
+  .product-picture {
+    width: 45%;
+    float: left;
+  }
+  .product-info {
+    width: 50%;
+    float: left;
+    padding: 0px 20px;
+  }
+  .product-purchase {
+    font-size: 16px;
+    padding: 0px 20px 20px 20px;
+    float: left;
+  }
+  .btn-add-card {
+    clear: both;
+  }
+  .product-info input {
+    margin: 5px;
+  }
+}
+
+@media (min-width:550px) {
+  .product-about {
+    height: 250px;
   }
 }
 
@@ -1969,6 +2144,9 @@ ul.tag-cloud, ul.sidebar-gallery {
   }
   .product-description {
     font-size: 12.5px;
+  }
+  .about-picture {
+    height: 350px;
   }
 }
 
@@ -1992,6 +2170,12 @@ ul.tag-cloud, ul.sidebar-gallery {
   .productos {
     height: 175px;
   }
+  .info {
+    padding: 50px;
+  }
+  .product-info .product-price {
+    margin-top: 0px;
+  }
 }
 
 @media (min-width:1200px) {
@@ -2008,6 +2192,9 @@ ul.tag-cloud, ul.sidebar-gallery {
   .productos .item-product-info {
     margin-left: 20px;
     margin-top: 5px;
+  }
+  .about-picture {
+    width: 40%;
   }
 }
 
