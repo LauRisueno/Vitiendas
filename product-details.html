@@ -14,6 +14,7 @@
   <link href="css/prettyPhoto.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
+
 </head>
 
 <body class="homepage">
@@ -32,13 +33,14 @@
 
         <div class="collapse navbar-collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Inicio</a></li>
+            <li class="active"><a href="index.html">Inicio</a></li>
             <li><a href="products.html">Productos</a></li>
-            <li class="active"><a href="about-us.html">Quienes somos</a></li>
+            <li><a href="about-us.html">Quienes somos</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact-us.html">Contacto</a></li>
             <li><a href="singIn.html">Ingresar</a></li>
             <li><a href="shopping-card.html" class="shopping-icon"><span class="compras">Compras</span><i class="fa fa-shopping-cart" style="font-size:16px;"></i></a></li>
+
           </ul>
         </div>
       </div>
@@ -49,23 +51,49 @@
   </header>
   <!--/header-->
 
-  <section id="about-us">
-    <div class="container">
-      <div class="skill-wrap clearfix">
-        <div class="center wow fadeInDown info">
-          <h2 class="text-center">¿Quienes Somos?</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt temporibus minima, quibusdam dolores
-            natus excepturi ipsa, porro dolorum consequatur illum atque eligendi ut dolorem laudantium. Atque ea ratione, eligendi est!</p>
-          <img class="pull-left" src="images/Vino.jpg" alt="">
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi repudiandae perspiciatis a! Odit iure numquam a enim vitae nihil accusantium accusamus. Ullam labore id a assumenda quia accusantium error doloremque. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Saepe incidunt sequi, minus quisquam tempore voluptatibus sint iusto, vero ipsum natus autem aspernatur tenetur perferendis, ab eligendi quibusdam dignissimos. Veritatis, qui! Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Voluptatibus debitis incidunt nisi impedit non, nobis accusamus nam omnis. Deserunt id deleniti nemo, doloribus distinctio rem labore accusantium odit tenetur hic.</p>
+  <div class="container producto-detallado">
+    <div class="row">
+      <div class="poduct-pictures col-sm-6">
+        <div id="carousel-1" class="carousel slide" data-ride="carousel">
+          <!-- Indicadores -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-1" data-slide-to="1"></li>
+            <li data-target="#carousel-1" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Contenedor -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="images/Vino.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="item">
+              <img src="images/Vino.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="item">
+              <img src="images/Vino.jpg" alt="" class="img-responsive">
+            </div>
+          </div>
         </div>
       </div>
+      <div class="product-description col-sm-6">
+        <h2>Vinos de Altura</h2>
+        <span>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </span>
+        <br>
+        <div style="margin-top:15px;">
+          <span class="name-orange">Cantidad :</span>
+          <input type="text" value="1">
+          <br><span class="name-orange">Total : </span>
+          <span>243Bs.</span>
+        </div>
+
+        <a href="#" class=" btn-add-card">Comprar</a>
+      </div>
     </div>
-    <!--/.container-->
-  </section>
-  <!--/about-us-->
+
+  </div>
 
   <div class="top-bar">
     <div class="container">
@@ -85,6 +113,8 @@
   </div>
   <!--/.top-bar-->
 
+
+
   <footer id="footer" class="midnight-blue">
     <div class="container">
       <div class="row">
@@ -94,6 +124,7 @@
       </div>
     </div>
   </footer>
+  <!--/#footer-->
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jquery.js"></script>

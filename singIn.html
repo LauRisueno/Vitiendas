@@ -38,7 +38,9 @@
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact-us.html">Contacto</a></li>
             <li class="active"><a href="singIn.html">Ingresar</a></li>
+            <li><a href="shopping-card.html" class="shopping-icon"><span class="compras">Compras</span><i class="fa fa-shopping-cart" style="font-size:16px;"></i></a></li>
           </ul>
+
         </div>
       </div>
       <!--/.container-->
@@ -56,22 +58,8 @@
           <input type="text" placeholder="Correo Electronico"><br>
           <input type="password" name="" placeholder="Contraseña">
           <a href="#" class="btn-ingreso">Iniciar</a>
-        </div>
-        <div class="singUp text-center">
-          <h2 class="name-orange text-center">Registrate</h2>
-          <span>Nombre :</span><br>
-          <input type="text" placeholder="Nombre Completo"><br>
-          <span>Nit :</span><br>
-          <input type="text" name="" value="" placeholder="Nit">
-          <br>
-          <span>Correo Electronico :</span><br>
-          <input type="text" placeholder="Correo Electronico" name="" value=""><br>
-          <span>Contraseña :</span><br>
-          <input type="password" placeholder="Contraseña" name="" value="">
-          <br>
-          <span>Repetir Contraseña :</span><br>
-          <input type="password" name="" placeholder="Repetir contraseña">
-          <a href="#" class="btn-ingreso text-center">Registrarse</a>
+          <span class="text-center font-block"> - o -</span>
+          <a href="#" class="font-link" data-toggle="modal" data-target="#singUp-details">Registrate en Vitiendas</a>
         </div>
       </div>
     </div>
@@ -105,6 +93,44 @@
     </div>
   </footer>
   <!--/#footer-->
+
+  <!-- Modal de Registro -->
+  <div class="modal fade" id="singUp-details" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content singup-modal">
+        <div class="modal-header" style="border-bottom:0;">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+          <div class="singUp text-center">
+            <h2 class="name-orange text-center">Registrate</h2>
+            <span>Nombre :</span><br>
+            <input type="text" placeholder="Nombre Completo"><br>
+            <span>Nit :</span><br>
+            <input type="text" name="" value="" placeholder="Nit">
+            <br>
+            <span> Dirección :</span><br>
+            <input type="text" name="" value="" placeholder="Dirección">
+            <br>
+            <span>Celular :</span><br>
+            <input type="text" name="" value="" placeholder="Celular">
+            <br>
+            <span>Correo Electronico :</span><br>
+            <input type="text" placeholder="Correo Electronico" name="" value=""><br>
+            <span>Contraseña :</span><br>
+            <input type="password" placeholder="Contraseña" name="" value="">
+            <br>
+            <span>Repetir Contraseña :</span><br>
+            <input type="password" name="" placeholder="Repetir contraseña">
+            <a href="#" class="btn-ingreso text-center">Registrarse</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal de Registro  -->
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jquery.js"></script>

@@ -14,12 +14,7 @@
   <link href="css/prettyPhoto.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
-  <!-- =======================================================
-    Theme Name: Gp
-    Theme URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-templat/
-    Author: BootstrapMade
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
+  <link rel="stylesheet" href="css/select2.min.css">
 </head>
 
 <body class="homepage">
@@ -44,6 +39,8 @@
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact-us.html">Contacto</a></li>
             <li><a href="singIn.html">Ingresar</a></li>
+            <li><a href="shopping-card.html" class="shopping-icon"><span class="compras">Compras</span><i class="fa fa-shopping-cart" style="font-size:16px;"></i></a></li>
+
           </ul>
         </div>
       </div>
@@ -61,7 +58,12 @@
         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
       </div>
       <div class="searcher text-center">
-        <input type="text" name="" value="" placeholder="Categoria">
+        <select class="js-example-basic-single" name="state">
+          <option value="">Seleccione Categoria</option>
+          <option value="vino">Vino</option>
+          <option value="singani">Singani</option>
+        </select>
+        <input type="text" name="" value="">
         <button class="btn-primary" type="button" name="btn-searcher">Buscar</button>
       </div>
 
@@ -71,9 +73,10 @@
           <div class="productos wow fadeInDown">
             <div class="item-product-picture" style="background-image:url('images/Vino.jpg');"></div>
             <div class="item-product-info">
-              <span class="product-name">Vinos de Altura</span>
+              <a href="product-details.html" class="product-name">Vinos de Altura</a>
               <span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
               <span class="product-price">234Bs.</span>
+              <a href="#" class="shopping-icon" data-toggle="modal" data-target="#product-information"><i class="fa fa-shopping-cart"></i></a>
             </div>
           </div>
         </div>
@@ -82,9 +85,10 @@
           <div class="productos wow fadeInDown">
             <div class="item-product-picture" style="background-image:url('images/Vino.jpg');"></div>
             <div class="item-product-info">
-              <span class="product-name">Vinos de Altura</span>
+              <a href="product-details.html" class="product-name">Vinos de Altura</a>
               <span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
               <span class="product-price">234Bs.</span>
+              <a href="#" class="shopping-icon" data-toggle="modal" data-target="#product-information"><i class="fa fa-shopping-cart"></i></a>
             </div>
           </div>
         </div>
@@ -93,9 +97,21 @@
           <div class="productos wow fadeInDown">
             <div class="item-product-picture" style="background-image:url('images/Vino.jpg');"></div>
             <div class="item-product-info">
-              <span class="product-name">Vinos de Altura</span>
+              <a href="product-details.html" class="product-name">Vinos de Altura</a>
               <span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
               <span class="product-price">234Bs.</span>
+              <a href="#" class="shopping-icon" data-toggle="modal" data-target="#product-information"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="productos wow fadeInDown">
+            <div class="item-product-picture" style="background-image:url('images/Vino.jpg');"></div>
+            <div class="item-product-info">
+              <a href="product-details.html" class="product-name">Vinos de Altura</a>
+              <span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
+              <span class="product-price">234Bs.</span>
+              <a href="#" class="shopping-icon" data-toggle="modal" data-target="#product-information"><i class="fa fa-shopping-cart"></i></a>
             </div>
           </div>
         </div>
@@ -104,9 +120,10 @@
           <div class="productos wow fadeInDown">
             <div class="item-product-picture" style="background-image:url('images/Vino.jpg');"></div>
             <div class="item-product-info">
-              <span class="product-name">Vinos de Altura</span>
+              <a href="product-details.html" class="product-name">Vinos de Altura</a>
               <span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
               <span class="product-price">234Bs.</span>
+              <a href="#" class="shopping-icon" data-toggle="modal" data-target="#product-information"><i class="fa fa-shopping-cart"></i></a>
             </div>
           </div>
         </div>
@@ -115,9 +132,21 @@
           <div class="productos wow fadeInDown">
             <div class="item-product-picture" style="background-image:url('images/Vino.jpg');"></div>
             <div class="item-product-info">
-              <span class="product-name">Vinos de Altura</span>
+              <a href="product-details.html" class="product-name">Vinos de Altura</a>
               <span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
               <span class="product-price">234Bs.</span>
+              <a href="#" class="shopping-icon" data-toggle="modal" data-target="#product-information"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="productos wow fadeInDown">
+            <div class="item-product-picture" style="background-image:url('images/Vino.jpg');"></div>
+            <div class="item-product-info">
+              <a href="product-details.html" class="product-name">Vinos de Altura</a>
+              <span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
+              <span class="product-price">234Bs.</span>
+              <a href="#" class="shopping-icon" data-toggle="modal" data-target="#product-information"><i class="fa fa-shopping-cart"></i></a>
             </div>
           </div>
         </div>
@@ -126,19 +155,10 @@
           <div class="productos wow fadeInDown">
             <div class="item-product-picture" style="background-image:url('images/Vino.jpg');"></div>
             <div class="item-product-info">
-              <span class="product-name">Vinos de Altura</span>
+              <a href="product-details.html" class="product-name">Vinos de Altura</a>
               <span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
               <span class="product-price">234Bs.</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-          <div class="productos wow fadeInDown">
-            <div class="item-product-picture" style="background-image:url('images/Vino.jpg');"></div>
-            <div class="item-product-info">
-              <span class="product-name">Vinos de Altura</span>
-              <span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
-              <span class="product-price">234Bs.</span>
+              <a href="#" class="shopping-icon" data-toggle="modal" data-target="#product-information"><i class="fa fa-shopping-cart"></i></a>
             </div>
           </div>
         </div>
@@ -147,9 +167,21 @@
           <div class="productos wow fadeInDown">
             <div class="item-product-picture" style="background-image:url('images/Vino.jpg');"></div>
             <div class="item-product-info">
-              <span class="product-name">Vinos de Altura</span>
+              <a href="product-details.html" class="product-name">Vinos de Altura</a>
               <span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
               <span class="product-price">234Bs.</span>
+              <a href="#" class="shopping-icon" data-toggle="modal" data-target="#product-information"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="productos wow fadeInDown">
+            <div class="item-product-picture" style="background-image:url('images/Vino.jpg');"></div>
+            <div class="item-product-info">
+              <a href="product-details.html" class="product-name">Vinos de Altura</a>
+              <span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
+              <span class="product-price">234Bs.</span>
+              <a href="#" class="shopping-icon" data-toggle="modal" data-target="#product-information"><i class="fa fa-shopping-cart"></i></a>
             </div>
           </div>
         </div>
@@ -158,19 +190,10 @@
           <div class="productos wow fadeInDown">
             <div class="item-product-picture" style="background-image:url('images/Vino.jpg');"></div>
             <div class="item-product-info">
-              <span class="product-name">Vinos de Altura</span>
+              <a href="product-details.html" class="product-name">Vinos de Altura</a>
               <span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
               <span class="product-price">234Bs.</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-          <div class="productos wow fadeInDown">
-            <div class="item-product-picture" style="background-image:url('images/Vino.jpg');"></div>
-            <div class="item-product-info">
-              <span class="product-name">Vinos de Altura</span>
-              <span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
-              <span class="product-price">234Bs.</span>
+              <a href="#" class="shopping-icon" data-toggle="modal" data-target="#product-information"><i class="fa fa-shopping-cart"></i></a>
             </div>
           </div>
         </div>
@@ -179,23 +202,16 @@
           <div class="productos wow fadeInDown">
             <div class="item-product-picture" style="background-image:url('images/Vino.jpg');"></div>
             <div class="item-product-info">
-              <span class="product-name">Vinos de Altura</span>
+              <a href="product-details.html" class="product-name">Vinos de Altura</a>
               <span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
               <span class="product-price">234Bs.</span>
+              <a href="#" class="shopping-icon" data-toggle="modal" data-target="#product-information"><i class="fa fa-shopping-cart"></i></a>
             </div>
           </div>
         </div>
 
-        <div class="col-sm-6 col-lg-4">
-          <div class="productos wow fadeInDown">
-            <div class="item-product-picture" style="background-image:url('images/Vino.jpg');"></div>
-            <div class="item-product-info">
-              <span class="product-name">Vinos de Altura</span>
-              <span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
-              <span class="product-price">234Bs.</span>
-            </div>
-          </div>
-        </div>
+
+
       </div>
       <!--/.row-->
     </div>
@@ -249,6 +265,12 @@
   <script src="js/jquery.isotope.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.js-example-basic-single').select2();
+    });
+  </script>
 
 </body>
 
