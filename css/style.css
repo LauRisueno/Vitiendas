@@ -2154,6 +2154,47 @@ ul.tag-cloud, ul.sidebar-gallery {
   padding: 10px;
 }
 
+.precio input {
+  width: 60px;
+  text-align: center;
+  padding: 3px;
+  border-radius: 2px;
+  border: solid 1px #ccc;
+  margin: 5px 20px;
+}
+
+.precio span {
+  color: #464242e3;
+  font-weight: 500;
+}
+
+.precio i {
+  display: block;
+  margin-top: -3px;
+  font-size: 16px;
+  color: #585555;
+  text-align: right;
+}
+
+.precio .font-block {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.shopping-details {
+  padding: 20px;
+}
+
+.shopping-details span {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+.shopping-details i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
 .name-product {
   font-size: 13px;
   display: block;
@@ -2174,12 +2215,25 @@ ul.tag-cloud, ul.sidebar-gallery {
 .producto-seleccionado .product-description {
   float: left;
   width: auto;
-  margin: 0px 10px;
+  margin-left: 6px;
+  margin-top: 0px;
+}
+
+.carrito {
+  float: right;
+  margin-top: 14px;
+}
+.carrito a{
+  color: #fff !important;
 }
 
 @media (min-width:400px) {
   .item-product-info .shopping-icon {
     font-size: 30px;
+  }
+  .precio i {
+    margin: 0 15px;
+    display: inline-block;
   }
 }
 
@@ -2242,10 +2296,13 @@ ul.tag-cloud, ul.sidebar-gallery {
   .product-info input {
     margin: 5px;
   }
-  .producto-seleccionado {
-    width: 400px;
-    height: 130px;
-    margin: 15px auto;
+  .precio {
+    display: inline-block;
+  }
+  .name-product {
+    display: inline-block;
+    margin-right: 13px;
+    font-size: 14.5px;
   }
 }
 
@@ -2256,6 +2313,17 @@ ul.tag-cloud, ul.sidebar-gallery {
 }
 
 @media (min-width:768px) {
+  .precio {
+    float: right;
+    margin-right: 20px;
+  }
+  .name-product {
+    margin: 3px 15px;
+    font-size: 16px;
+  }
+  .producto-seleccionado .product-description {
+    width: 85%;
+  }
   .compras {
     display: none;
   }
@@ -2279,14 +2347,16 @@ ul.tag-cloud, ul.sidebar-gallery {
 }
 
 @media (min-width:992px) {
-  .producto-seleccionado {
-    width: 50%;
-    height: 165px;
+  .productos1 {
+    float: left;
+    height: auto;
+    background: transparent;
   }
   .name-product {
     font-size: 18px;
-    display: block;
-    margin: 15px 0;
+  }
+  .producto-seleccionado .product-description {
+    width: 80%;
   }
   .item-product {
     width: 46.8%;

@@ -14,6 +14,7 @@
   <link href="css/prettyPhoto.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
 </head>
 
 <body class="homepage">
@@ -28,6 +29,7 @@
                         <span class="icon-bar"></span>
                     </button>
           <a class="navbar-brand" href="index.html">Vitiendas</a>
+
         </div>
 
         <div class="collapse navbar-collapse navbar-right">
@@ -38,8 +40,10 @@
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact-us.html">Contacto</a></li>
             <li><a href="singIn.html">Ingresar</a></li>
-            <li class="active"><a href="shopping-card.html" class="shopping-icon"><span class="compras">Compras</span><i class="fa fa-shopping-cart" style="font-size:16px;"></i></a></li>
+            <li class="active"><a href="shopping-card.html" class="shopping-icon"><i class="fa fa-shopping-cart" style="font-size:16px;"></i> 0</a></li>
           </ul>
+        </div>
+        <div class="carrito">
 
         </div>
       </div>
@@ -50,18 +54,42 @@
   </header>
   <!--/header-->
   <div class="container compras-container">
-    <div class="row">
-      <div class="producto-seleccionado col-md-6">
+    <div class="row productos1">
+      <div class="producto-seleccionado">
         <div class="product-picture">
           <img src="images/Vino.jpg" alt="">
         </div>
         <div class="product-description">
           <span class="name-product">Vinos de Altura</span>
-          <span class="name-orange">Cantidad :</span><span>3</span><br>
-          <span class="name-orange">Tolal :</span><span>243Bs.</span>
+          <div class="precio">
+            <span>240Bs</span>
+            <span class="font-block">x</span>
+            <input type="text" name="" value="1">
+            <span>240Bs</span>
+            <i class="icon-trash-2"></i>
+          </div>
         </div>
       </div>
-
+      <div class="producto-seleccionado">
+        <div class="product-picture">
+          <img src="images/Vino.jpg" alt="">
+        </div>
+        <div class="product-description">
+          <span class="name-product">Vinos de Altura</span>
+          <div class="precio">
+            <span>240Bs</span>
+            <span class="font-block">x</span>
+            <input type="text" name="" value="1">
+            <span>240Bs</span>
+            <i class="icon-trash-2"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shopping-details">
+      <i class="icon-trash-2"></i>
+      <span class="name-orange">Subtotal :</span>
+      <span>480Bs</span>
     </div>
 
   </div>
