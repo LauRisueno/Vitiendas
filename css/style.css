@@ -30,6 +30,7 @@ h1 {
 
 h2 {
   font-size: 20px;
+  margin-top: 20px;
 }
 
 h3 {
@@ -2125,8 +2126,11 @@ ul.tag-cloud, ul.sidebar-gallery {
   font-size: 12px;
   line-height: 1.5;
   margin: 0px;
-  padding: 20px;
+  padding: 0px 25px 10px 25px;
+  /* padding: 5px 25px 5px 5px; */
   text-align: justify;
+  background-color: white;
+  margin-top: 30px;
 }
 
 .producto-detallado .product-description .name-orange {
@@ -2148,6 +2152,7 @@ ul.tag-cloud, ul.sidebar-gallery {
 }
 
 .producto-seleccionado {
+  background: #fff;
   border-radius: 5px;
   height: 100px;
   margin: 10px 10px;
@@ -2182,12 +2187,21 @@ ul.tag-cloud, ul.sidebar-gallery {
 }
 
 .shopping-details {
+  background: #fff;
   padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
 }
 
 .shopping-details span {
   display: inline-block;
   margin: 0px 10px;
+  float: right;
+}
+
+.shopping-details .btn-add-card {
+  padding: 3px;
+  width: 170px;
 }
 
 .shopping-details i {
@@ -2223,8 +2237,63 @@ ul.tag-cloud, ul.sidebar-gallery {
   float: right;
   margin-top: 14px;
 }
-.carrito a{
+
+.carrito a {
   color: #fff !important;
+}
+
+.producto-detallado .product {
+  background: #fff;
+  margin: 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+  padding: 0;
+  margin: 15px 5px;
+}
+
+.sug {
+  background: #fff;
+  padding: 20px;
+  margin: 10px 10px;
+  border-radius: 5px;
+}
+
+.sug .picture {
+  background-size: cover;
+  background-image: url(images/Vino.jpg);
+  height: 160px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: -19px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.sug .product-description {
+  padding: 5px 5px 5px 5px;
+  margin-top: 25px !important;
+}
+
+.sug .product-description .name-product {
+  font-size: 18px;
+}
+
+.sug .btn-add-card {
+  margin-bottom: 0;
+}
+
+.sugerencias h3 {
+  display: block;
+  margin: 0px 20px;
+  color: #f4ae4f;
+}
+
+.sugerencias {
+  padding: 0px 20px 20px 40px;
+  text-align: center;
+}
+
+.product .poduct-pictures {
+  padding: 25px 25px 0px 25px;
 }
 
 @media (min-width:400px) {
@@ -2313,6 +2382,12 @@ ul.tag-cloud, ul.sidebar-gallery {
 }
 
 @media (min-width:768px) {
+  .shopping-details .btn-add-card {
+  display: inline-block;
+  }
+  .sug {
+    width: 46%;
+  }
   .precio {
     float: right;
     margin-right: 20px;
@@ -2344,9 +2419,35 @@ ul.tag-cloud, ul.sidebar-gallery {
   .about-picture {
     height: 350px;
   }
+  .producto-detallado .product-description {
+    margin-top: 10px;
+  }
 }
 
 @media (min-width:992px) {
+  .shopping-details{
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  .sug {
+    width: 22.5%;
+  }
+  .product .poduct-pictures {
+    padding: 25px 25px 25px 25px;
+  }
+  .sug .btn-add-card {
+    width: 110px;
+    padding: 5px;
+  }
+  .sug .product-description .name-product {
+    font-size: 15px;
+    margin: 0;
+  }
+  .sug .product-price {
+    margin: 0;
+    font-size: 18px;
+  }
   .productos1 {
     float: left;
     height: auto;
