@@ -1997,11 +1997,11 @@ ul.tag-cloud, ul.sidebar-gallery {
 }
 
 .searcher input {
-  width: 210px;
-  height: 30px;
+  width: 100px;
+  height: 32px;
   border: 0;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 5px 0px 0px 5px;
   font-size: 14px;
 }
 
@@ -2382,6 +2382,22 @@ ul.tag-cloud, ul.sidebar-gallery {
   color: #333 !important;
 }
 
+.select-category {
+  height: 32px;
+  background: #fff;
+  padding: 2px;
+  border: 0;
+  border-radius: 0 5px 5px 0px;
+  margin-left: -5px;
+  border-left: 1px solid #ccc;
+}
+.select-category:focus{
+  outline: 0;
+}
+option {
+  background: #000;
+  color: #fff;
+}
 @media (min-width:400px) {
   .item-product-info .shopping-icon {
     font-size: 30px;
@@ -2404,6 +2420,9 @@ ul.tag-cloud, ul.sidebar-gallery {
 }
 
 @media (min-width:500px) {
+  .searcher input {
+    width: 200px;
+  }
   .info img {
     width: 450px;
     height: auto;
@@ -2468,6 +2487,12 @@ ul.tag-cloud, ul.sidebar-gallery {
 }
 
 @media (min-width:768px) {
+  .producto-seleccionado .picture {
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin-top: 0;
+  }
   .producto-seleccionado .picture img {
     margin-top: 3px;
   }
@@ -2516,7 +2541,7 @@ ul.tag-cloud, ul.sidebar-gallery {
     width: auto;
     height: 365px;
     margin: 15px auto;
-}
+  }
   .product-description {
     font-size: 12.5px;
   }
@@ -2603,7 +2628,6 @@ ul.tag-cloud, ul.sidebar-gallery {
     margin-left: 20px;
     margin-top: 20px;
   }
-
   .productos .item-product-info {
     margin-left: 20px;
     margin-top: 5px;
