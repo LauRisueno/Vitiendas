@@ -1924,21 +1924,21 @@ ul.tag-cloud, ul.sidebar-gallery {
 }
 
 .item-product-picture {
-  width: 40%;
-  height: 100%;
+  width: 100%;
+  height: 60%;
   float: left;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  border-radius: 5px 0px 0px 5px;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .item-product-info {
   float: left;
-  width: 50%;
+  width: 98%;
   margin: 5px;
   margin-left: 10px;
-  margin-top: 10px;
+  padding: 10px;
 }
 
 .product-name {
@@ -1977,6 +1977,7 @@ ul.tag-cloud, ul.sidebar-gallery {
   font-size: 12px;
   line-height: 1.5;
   margin: 10px 0px;
+  margin-top: 3px;
 }
 
 .vitiendas-slide {
@@ -2014,7 +2015,7 @@ ul.tag-cloud, ul.sidebar-gallery {
 }
 
 .productos {
-  height: 155px;
+  height: 350px;
   background: #fff;
   margin: 15px 0px;
 }
@@ -2151,12 +2152,59 @@ ul.tag-cloud, ul.sidebar-gallery {
   margin-top: 65px;
 }
 
-.producto-seleccionado {
-  background: #fff;
-  border-radius: 5px;
-  height: 100px;
-  margin: 10px 10px;
+.producto-seleccionado .picture {
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin-top: 10px;
+}
+
+.producto-seleccionado .picture img {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+.product-details input {
+  width: 60px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin: 3px 10px;
+} */
+
+.product-details input {
+  width: 60px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin: 1px 4px;
+}
+
+.product-details .font-block {
+  display: block;
+  font-size: 15px;
+  margin: 5px 0px;
+}
+
+.producto-seleccionado .product-details {
+  float: left;
+  padding: 0px 10px;
+  width: 70%;
+}
+
+.detalles-compra {
   padding: 10px;
+  background: #fff;
+  height: auto;
+  border-radius: 5px;
+  margin: 20px 0px;
+}
+
+.detalles-compra .precio {
+  float: right;
+  margin: 10px;
+  margin-right: 15px;
 }
 
 .precio input {
@@ -2296,6 +2344,44 @@ ul.tag-cloud, ul.sidebar-gallery {
   padding: 25px 25px 0px 25px;
 }
 
+.productos-seleccionados {
+  height: auto;
+}
+
+.mensaje1 .mensaje {
+  height: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.productos-seleccionados .buscador {
+  background: #fff;
+  height: 40px;
+  margin: 30px 0px 15px 0px;
+}
+
+.reset-margin {
+  margin: 0;
+}
+
+.producton {
+  background: #fff;
+  border-radius: 5px;
+  height: 115px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.btn-continue {
+  background: #efefef;
+  border: 1px solid #ddd;
+  color: #333 !important;
+}
+
 @media (min-width:400px) {
   .item-product-info .shopping-icon {
     font-size: 30px;
@@ -2325,7 +2411,7 @@ ul.tag-cloud, ul.sidebar-gallery {
   }
   .item-product, .productos {
     width: 490px;
-    height: 160px;
+    height: 360px;
     margin: 15px auto;
   }
   .product-description {
@@ -2382,8 +2468,24 @@ ul.tag-cloud, ul.sidebar-gallery {
 }
 
 @media (min-width:768px) {
+  .producto-seleccionado .picture img {
+    margin-top: 3px;
+  }
+  .detalles-compra .btn-add-card {
+    display: inline-block;
+    padding: 5px;
+    width: 155px;
+  }
+  .producto-seleccionado {
+    width: 49%;
+  }
+  .detalles-compra {
+    width: 49%;
+    margin: 0;
+    margin-left: 10px;
+  }
   .shopping-details .btn-add-card {
-  display: inline-block;
+    display: inline-block;
   }
   .sug {
     width: 46%;
@@ -2410,9 +2512,11 @@ ul.tag-cloud, ul.sidebar-gallery {
     height: 150px;
     margin: 15px 15px;
   }
-  .productos {
+  .item-product, .productos {
     width: auto;
-  }
+    height: 365px;
+    margin: 15px auto;
+}
   .product-description {
     font-size: 12.5px;
   }
@@ -2425,7 +2529,13 @@ ul.tag-cloud, ul.sidebar-gallery {
 }
 
 @media (min-width:992px) {
-  .shopping-details{
+  .producto-seleccionado, .detalles-compra {
+    width: 49%;
+  }
+  .detalles-compra {
+    margin-left: 15px;
+  }
+  .shopping-details {
     float: left;
     margin-left: 10px;
     margin-top: 20px;
@@ -2473,10 +2583,9 @@ ul.tag-cloud, ul.sidebar-gallery {
   .product-name {
     font-size: 20px;
     font-weight: 500;
-    margin-top: 6px;
   }
   .productos {
-    height: 175px;
+    height: 415px;
   }
   .info {
     padding: 50px;
@@ -2494,9 +2603,7 @@ ul.tag-cloud, ul.sidebar-gallery {
     margin-left: 20px;
     margin-top: 20px;
   }
-  .productos {
-    height: 180px;
-  }
+
   .productos .item-product-info {
     margin-left: 20px;
     margin-top: 5px;
