@@ -15,6 +15,7 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
   <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/select2.css">
 </head>
 
 <body class="homepage">
@@ -40,7 +41,7 @@
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact-us.html">Contacto</a></li>
             <li><a href="singIn.html">Ingresar</a></li>
-            <li class="active"><a href="shopping-card.html" class="shopping-icon"><i class="fa fa-shopping-cart" style="font-size:16px;"></i> 0</a></li>
+            <li class="active"><a href="shopping-card.html"><i class="fa fa-shopping-cart" style="font-size:18px;"></i><span class="badge">3</span></a></li>
           </ul>
         </div>
         <div class="carrito">
@@ -58,10 +59,10 @@
       <div class="col-md-12">
         <div class="searcher text-center" style="margin-top:40px;">
           <input type="text" name="" value="">
-          <select class="select-category" name="state">
-            <option value="">Seleccione Categoria</option>
-            <option value="vino">Vino</option>
-            <option value="singani">Singani</option>
+          <select id="e1">
+            <option value="">Categoria</option>
+              <option value="vino">Vino</option>
+              <option value="singani">Singani</option>
           </select>
           <button class="btn-primary" type="button" name="btn-searcher">Buscar</button>
         </div>
@@ -79,9 +80,11 @@
                 <span>240Bs</span>
                 <span>x</span>
                 <input type="text" name="" value="1">
-                <span>240Bs</span><br>
-                <i class="icon-trash-2"></i>
-                <span>Eliminar</span>
+                <span>240Bs</span>
+                <div class="basurero">
+                  <i class="icon-trash-2"></i>
+                  <span>Eliminar</span>
+                </div>
               </div>
             </div>
             <div class="producton">
@@ -93,9 +96,11 @@
                 <span>240Bs</span>
                 <span>x</span>
                 <input type="text" name="" value="1">
-                <span>240Bs</span><br>
-                <i class="icon-trash-2"></i>
-                <span class="">Eliminar</span>
+                <span>240Bs</span>
+                <div class="basurero">
+                  <i class="icon-trash-2"></i>
+                  <span>Eliminar</span>
+                </div>
               </div>
             </div>
           </div>
@@ -159,8 +164,8 @@
   <footer id="footer" class="midnight-blue">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6">
-          Copyright © 2017 <span class="name-orange">GooMovil</span>. Todos los derechos reservados S.A.
+        <div class="">
+          Copyright © 2017 <span class="name-orange">GooMovil</span>.
         </div>
       </div>
     </div>
@@ -175,6 +180,12 @@
   <script src="js/jquery.isotope.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
+  <script type="text/javascript" src="js/select2.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#e1").select2();
+    });
+  </script>
 
 </body>
 

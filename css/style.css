@@ -270,7 +270,7 @@ ul.social-share li a:hover {
 
 .navbar-fixed-top .navbar-nav>.active>a, .navbar-fixed-top .navbar-nav>.active>a:hover, .navbar-fixed-top .navbar-nav>.active>a:focus, .navbar-fixed-top .navbar-nav>.open>a, .navbar-fixed-top .navbar-nav>.open>a:hover, .navbar-fixed-top .navbar-nav>.open>a:focus {
   background-color: #fff;
-  color: #333;
+  color: #ff7918;
 }
 
 .navbar-fixed-top .navbar-nav .dropdown-menu {
@@ -1536,27 +1536,26 @@ textarea#message {
   color: #fff;
 }
 
-.badge:before {
-  border-color: transparent transparent transparent #E8CE0E;
-  border-style: solid;
-  border-width: 10px;
-  bottom: -8px;
-  content: "";
-  height: 0;
-  left: 5px;
-  position: absolute;
-  z-index: -99999;
+.badge {
+  margin-left: 5px;
+  background-color: #fff;
+  color: #f38310;
+  font-size: 11px;
+  border-radius: 50%;
+  padding: 3px 6px;
 }
 
-.badge {
-  background-color: #E8CE0E;
-  border-radius: 5px;
+.active a .badge {
+  margin-left: 5px;
+  background-color: #f19633;
   color: #fff;
-  padding: 8px;
-  position: relative;
-  left: 60px;
-  top: -18px;
-  font-weight: normal;
+  font-size: 11px;
+  border-radius: 50%;
+  padding: 3px 6px;
+}
+
+.active a i {
+  color: #f19633;
 }
 
 .blog_archieve {
@@ -1710,7 +1709,7 @@ ul.pagination>li>a {
   margin-right: 5px;
   border-radius: 5px;
   font-size: 16px;
-  padding: 5px 14px;
+  padding: 3px 9px;
 }
 
 ul.pagination>li>a i {
@@ -1998,8 +1997,11 @@ ul.tag-cloud, ul.sidebar-gallery {
 
 .searcher input {
   width: 100px;
-  height: 32px;
-  border: 0;
+  height: 28px;
+  margin-right: -4px;
+  margin-top: 4px;
+  border: 1px solid #aaa;
+  border-right: 0;
   padding: 10px;
   border-radius: 5px 0px 0px 5px;
   font-size: 14px;
@@ -2012,6 +2014,7 @@ ul.tag-cloud, ul.sidebar-gallery {
 .searcher button {
   padding: 4px 25px;
   border-radius: 12px;
+  margin-left: 50px;
 }
 
 .productos {
@@ -2063,6 +2066,41 @@ ul.tag-cloud, ul.sidebar-gallery {
   border: solid 1px #ccc;
   margin-top: 15px;
   border-radius: 5px;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.top-bar {
+  position: absolute;
+  width: 100%;
+  bottom: 100px;
+}
+
+.productos-seleccionados .col-md-12 {
+  height: auto;
+  margin-bottom: 120px;
+}
+
+#contact-page .container {
+  margin-bottom: 120px;
+}
+
+.product .row {
+  margin-bottom: 150px;
 }
 
 .modal-body .singUp input {
@@ -2119,7 +2157,15 @@ ul.tag-cloud, ul.sidebar-gallery {
 }
 
 .producto-detallado {
-  margin-top: 55px;
+  margin-top: 75px;
+  margin-bottom: 135px;
+}
+
+.product-description .shopping-icon {
+  float: right;
+  margin-top: -32px;
+  font-size: 20px;
+  color: #f19633;
 }
 
 .producto-detallado .product-description {
@@ -2302,7 +2348,7 @@ ul.tag-cloud, ul.sidebar-gallery {
 .sug {
   background: #fff;
   padding: 20px;
-  margin: 10px 10px;
+  margin: 15px 10px;
   border-radius: 5px;
 }
 
@@ -2336,7 +2382,7 @@ ul.tag-cloud, ul.sidebar-gallery {
 }
 
 .sugerencias {
-  padding: 0px 20px 20px 40px;
+  padding: 0px 20px 20px 25px;
   text-align: center;
 }
 
@@ -2391,14 +2437,68 @@ ul.tag-cloud, ul.sidebar-gallery {
   margin-left: -5px;
   border-left: 1px solid #ccc;
 }
-.select-category:focus{
+
+.select-category:focus {
   outline: 0;
 }
+
 option {
   background: #000;
   color: #fff;
 }
+
+.select2-container--default .select2-selection--single {
+  background-color: #fff !important;
+  border: 1px solid #aaa !important;
+  border-radius: 0px 4px 4px 0px !important;
+  border-left: 0;
+  margin-top: -5px !important;
+  width: 100px !important;
+  outline: 0;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: -1px !important;
+  right: -12px !important;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #f19633 !important;
+  color: white;
+}
+
+.item-product .item-product-picture {
+  width: 40%;
+  height: 100%;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.item-product .item-product-info {
+  float: left;
+  width: 54%;
+  margin: 5px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+@media (min-width:389px) {
+  .select2-container--default .select2-selection--single {
+    margin-top: -3px !important;
+  }
+}
+
 @media (min-width:400px) {
+  .producto-seleccionado .picture {
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin-top: 0;
+    /* margin-top: 10px; */
+  }
   .item-product-info .shopping-icon {
     font-size: 30px;
   }
@@ -2419,7 +2519,21 @@ option {
   }
 }
 
+@media (min-width:448px) {
+  .top-bar {
+    bottom: 82px;
+  }
+}
+
 @media (min-width:500px) {
+  .sug {
+    margin: 10px 10px;
+  }
+  .product .item-product, .productos {
+    width: 490px;
+    height: 160px;
+    margin: 15px auto;
+  }
   .searcher input {
     width: 200px;
   }
@@ -2487,11 +2601,32 @@ option {
 }
 
 @media (min-width:768px) {
-  .producto-seleccionado .picture {
-    width: 90px;
-    height: 90px;
+  .product-description .name-product {
+    margin: 0;
+  }
+  .item-product .item-product-picture {
+    width: 40%;
+    height: 100%;
     float: left;
-    margin-top: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 5px 0px 0px 5px;
+  }
+  .item-product .item-product-info {
+    float: left;
+    width: 50%;
+    margin: 5px;
+    margin-left: 10px;
+    padding: 10px;
+  }
+  .product .item-product {
+    width: 46%;
+    height: 175px;
+    margin: 10px 15px;
+  }
+  .top-bar {
+    bottom: 100px;
   }
   .producto-seleccionado .picture img {
     margin-top: 3px;
@@ -2551,9 +2686,24 @@ option {
   .producto-detallado .product-description {
     margin-top: 10px;
   }
+  .producton .picture {
+    width: 90px !important;
+    height: 90px !important;
+    float: left;
+    margin-top: 0;
+  }
 }
 
 @media (min-width:992px) {
+  .basurero {
+    float: right;
+  }
+  .product .item-product {
+    width: 46.8%;
+  }
+  .top-bar {
+    bottom: 82px;
+  }
   .producto-seleccionado, .detalles-compra {
     width: 49%;
   }
@@ -2621,6 +2771,9 @@ option {
 }
 
 @media (min-width:1200px) {
+  .product .item-product {
+    width: 47.3%;
+  }
   .item-product {
     width: 47.4%;
   }

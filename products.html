@@ -14,7 +14,7 @@
   <link href="css/prettyPhoto.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/select2.css">
 </head>
 
 <body class="homepage">
@@ -39,7 +39,7 @@
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact-us.html">Contacto</a></li>
             <li><a href="singIn.html">Ingresar</a></li>
-            <li><a href="shopping-card.html" class="shopping-icon"><i class="fa fa-shopping-cart" style="font-size:16px;"></i> 0</a></li>
+            <li><a href="shopping-card.html"><i class="fa fa-shopping-cart" style="font-size:18px;"></i><span class="badge">3</span></a></li>
           </ul>
         </div>
       </div>
@@ -58,10 +58,10 @@
       </div>
       <div class="searcher text-center">
         <input type="text" name="" value="">
-        <select class="select-category" name="state">
-          <option value="">Seleccione Categoria</option>
-          <option value="vino">Vino</option>
-          <option value="singani">Singani</option>
+        <select id="e1">
+          <option value="">Categoria</option>
+            <option value="vino">Vino</option>
+            <option value="singani">Singani</option>
         </select>
         <button class="btn-primary" type="button" name="btn-searcher">Buscar</button>
       </div>
@@ -222,7 +222,7 @@
     <!--/.container-->
   </section>
   <!--/#services-->
-  <div class="paginacion text-center">
+  <div class="paginacion text-center" style="margin-bottom:170px;">
     <ul class="pagination pagination-lg">
       <li><a href="#"><i class="fa fa-long-arrow-left"></i>Anterior</a></li>
       <li class="active"><a href="#">1</a></li>
@@ -269,10 +269,10 @@
   <script src="js/jquery.isotope.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/select2.min.js"></script>
-  <script type="text/javascript">
+  <script src="js/select2.js"></script>
+  <script>
     $(document).ready(function() {
-      $('.js-example-basic-single').select2();
+      $("#e1").select2();
     });
   </script>
 
