@@ -253,9 +253,8 @@ ul.social-share li a:hover {
 }
 
 .navbar-fixed-top .navbar-nav>li>a:hover {
-  /* background-color: #E8CE0E; */
   background-color: #fff;
-  color: #333;
+  color: #f19733;
 }
 
 .navbar-fixed-top {
