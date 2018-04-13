@@ -59,6 +59,8 @@ a:hover, a:focus {
 hr {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #fff;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
 }
 
 .btn-primary {
@@ -1965,7 +1967,7 @@ ul.tag-cloud, ul.sidebar-gallery {
   padding: 0;
   margin-top: 10px;
   margin: 15px 15px;
-  height: 150px;
+  height: 165px;
   background: #fefefe;
   border-radius: 5px;
 }
@@ -2544,7 +2546,7 @@ option {
   }
   .product .item-product, .productos {
     width: 490px;
-    height: 160px;
+    height: 170px;
     margin: 15px auto;
   }
   .searcher input {
@@ -2635,7 +2637,7 @@ option {
   }
   .product .item-product {
     width: 46%;
-    height: 175px;
+    height: 180px;
     margin: 10px 15px;
   }
   .top-bar {
