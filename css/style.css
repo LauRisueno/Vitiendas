@@ -1842,6 +1842,15 @@ ul.tag-cloud, ul.sidebar-gallery {
 
 /*Styles Vitiendas */
 
+.product-details a {
+  float: right;
+  margin-top: -22px;
+}
+
+.product-details a:hover {
+  color: #f19633;
+}
+
 .modal-body {
   padding: 0px 15px !important;
 }
@@ -2710,6 +2719,10 @@ option {
 }
 
 @media (min-width:992px) {
+  .product-details a {
+    float: none;
+    margin-top: 10px;
+  }
   .basurero {
     float: right;
   }
@@ -2786,6 +2799,10 @@ option {
 }
 
 @media (min-width:1200px) {
+  .product-details a {
+    display: block;
+    margin-top: 5px;
+  }
   .product .item-product {
     width: 47.3%;
   }
