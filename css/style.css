@@ -2024,7 +2024,8 @@ ul.tag-cloud, ul.sidebar-gallery {
 .searcher button {
   padding: 4px 25px;
   border-radius: 12px;
-  margin-left: 50px;
+  margin: 10px auto;
+  margin-left: 85px;
 }
 
 .productos {
@@ -2476,14 +2477,14 @@ option {
   border: 1px solid #aaa !important;
   border-radius: 0px 4px 4px 0px !important;
   border-left: 0;
-  margin-top: -5px !important;
-  width: 100px !important;
+  margin-top: -4px !important;
+  width: 165px !important;
   outline: 0;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
-  top: -1px !important;
-  right: -12px !important;
+  top: -3px !important;
+  right: -63px !important;
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
@@ -2511,7 +2512,7 @@ option {
 
 @media (min-width:389px) {
   .select2-container--default .select2-selection--single {
-    margin-top: -3px !important;
+    margin-top: -2px !important;
   }
 }
 
@@ -2529,6 +2530,9 @@ option {
   .precio i {
     margin: 0 15px;
     display: inline-block;
+  }
+  .searcher{
+    text-align: center;
   }
 }
 
